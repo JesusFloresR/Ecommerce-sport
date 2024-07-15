@@ -1,0 +1,29 @@
+.header{
+  width: 100vw;
+  position: fixed;
+
+}
+
+.hero-section{
+  width: 100vw;
+  background-image: 
+    url('assets/background-hero-image3.jpg');
+  background-size: cover;
+}
+
+.width-1280{
+  width: 1280px;
+}
+
+.border-test{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #ccc; /* Añade un borde para asegurar la visibilidad */
+  padding: 0.5rem; /* Añade relleno para que no quede muy pegado al borde */
+  font-size: 1rem; /* Tamaño de fuente adecuado */
+}
+
+.width-suggestions{
+  width: calc(100% - 69.95px);
+}
