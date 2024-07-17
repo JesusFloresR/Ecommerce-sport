@@ -1,13 +1,28 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import { Home } from './views/Home'
+import { ProductCatalog } from './views/ProductCatalog'
+import { DetailProduct } from './views/DetailProduct'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom"
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <ProductCatalog />,
+    },
+    {
+      path: "/product/:id",
+      element: <DetailProduct />,
+    },
+  ]);
   return (
-    <Home />
+    <RouterProvider router={router} />
     // <>
     //   <div>
     //     <a href="https://vitejs.dev" target="_blank">

@@ -1,11 +1,11 @@
 .header{
-  width: 100vw;
+  width: 100%;
   position: fixed;
-
+  z-index: 10;
 }
 
 .hero-section{
-  width: 100vw;
+  width: 100%;
   background-image: 
     url('assets/background-hero-image3.jpg');
   background-size: cover;
